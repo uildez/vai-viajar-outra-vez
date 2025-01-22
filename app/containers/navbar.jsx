@@ -28,7 +28,7 @@ const sideVariants = {
   }
 };
 
-export const Navbar = () => {
+export default function Navbar() {
   const [open, cycleOpen] = useCycle(false, true);
 
   const links = [

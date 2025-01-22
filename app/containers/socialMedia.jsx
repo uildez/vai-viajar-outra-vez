@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import InstagramTitle from '../components/instagramTitle';
 
-export const SocialMedia = () => {
+export default function SocialMedia() {
   const scrollRef = useRef(null);
 
   let [ref, { width }] = useMeasure();

@@ -8,7 +8,7 @@ import 'swiper/css';
 import GuidesUp from '../components/guidesUp';
 import GuidesDown from '../components/guideDown';
 
-export const Guides = () => {
+export default function Guides() {
   return (
     <div id='guias' className={`relative flex flex-col gap-12 justify-center items-center h-[80vh] w-full pb-12 pt-20`}>
       <h2 className='relative w-fit mx-auto text-6xl text-blue-600 bg-yellow-600 group-hover:scale-110 transition-transform duration-500 ease-in-out px-8 py-4 font-akina uppercase z-10'>

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import React from 'react'
 import AboutTitle from '../components/aboutTitle'
 
-export const About = () => {
+export default function About() {
   return (
     <div className='flex bg-blue-600' id='sobre'>
       <div className={`relative flex lg:flex-row flex-col justify-center w-full px-8 py-12 lg:py-0 lg:px-40 gap-20`}>

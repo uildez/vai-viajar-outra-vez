@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-export const Member = () => {
+export default function Member() {
   return (
     <div id='cupons' className='flex relative items-start h-screen justify-start w-full mx-auto gap-4 px-8 lg:px-40 py-12 bg-yellow-600'>
       <div className='flex flex-col justify-start items-start gap-12'>

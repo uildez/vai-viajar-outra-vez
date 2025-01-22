@@ -6,7 +6,7 @@ import ProductTitleDown from '../components/productTitleDown';
 import ProductTitleUp from '../components/productTitleUp';
 import ProductImage from '../components/productImage';
 
-export const Products = () => {
+export default function Products() {
   return (
     <div id='produtos' className='relative'>
       <div className='flex flex-col items-center justify-center w-full py-12 mx-auto gap-12 z-10'>

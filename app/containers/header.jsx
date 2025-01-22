@@ -5,7 +5,7 @@ import { animate, motion, useMotionValue } from "motion/react"
 import React from 'react'
 import AnimatedSVG from '../components/animatedSVG';
 
-export const Header = () => {
+export default function Header () {
   const scrollRef = useRef(null);
 
   let [ref, { width }] = useMeasure();
@@ -50,4 +50,3 @@ export const Header = () => {
     </div>
   )
 }
-""

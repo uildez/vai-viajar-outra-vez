@@ -8,7 +8,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import YoutubeTitle from '../components/youtubeTitle';
 
-export const Youtube = () => {
+export default function Youtube() {
   return (
     <div className='flex flex-col gap-12 bg-blue-600 py-12'>
       <div className='flex items-start justify-center w-full mx-auto gap-8 bg-blue-600'>
