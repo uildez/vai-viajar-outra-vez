@@ -1,10 +1,8 @@
 'use client';
 
-import Image from 'next/image';
 import React from 'react'
 
-import { AnimatePresence, motion, useCycle } from 'motion/react';
-import { CgClose } from "react-icons/cg";
+import { motion } from 'motion/react';
 
 const itemVariants = {
   closed: {
@@ -29,8 +27,6 @@ const sideVariants = {
 };
 
 export default function Navbar() {
-  const [open, cycleOpen] = useCycle(false, true);
-
   const links = [
     { name: "Home", to: "#inicio", id: 1 },
     { name: "Sobre", to: "#sobre", id: 2 },
@@ -63,45 +59,10 @@ export default function Navbar() {
             </motion.div>
           </div>
           <button className='flex items-center justify-center gap-4 px-6 py-2 bg-yellow-600 text-black rounded-[10px] uppercase font-bold hover:rotate-2 hover:-translate-y-2 transition-transform duration-500'>
-            {/* <img className='w-[10px] lg:w-auto' src={"/webp/cadeado.webp"} width={150} height={150} alt='Cadeado' /> */}
             Área de Membros
           </button>
-          {/* <img onClick={cycleOpen} className='cursor-pointer hover:scale-105' src={"/images/menu-icon.webp"} width={50} height={50} alt='Logo Kemparsk' /> */}
         </div>
       </div>
-
-      {/* <AnimatePresence>
-        {open && (
-          <motion.aside
-            initial={{ width: 0 }}
-            animate={{ width: "100%" }}
-            exit={{ width: 0, transition: { delay: 0.7, duration: 0.3 } }}
-            className='fixed top-0 right-0 h-full bg-[#010305]/80 backdrop-blur-xl z-20'
-          >
-            <button className='absolute text-white right-8 lg:right-40 top-8' onClick={cycleOpen}>{open && <CgClose className='text-4xl' />}</button>
-            <motion.div
-              className="flex flex-col items-center gap-12 justify-center h-full"
-              initial="closed"
-              animate="open"
-              exit="closed"
-              variants={sideVariants}
-            >
-              {links.map(({ name, to, id }) => (
-                <motion.a
-                  onClick={cycleOpen}
-                  key={id}
-                  href={to}
-                  whileHover={{ scale: 1.1 }}
-                  variants={itemVariants}
-                  className="text-2xl lg:text-4xl text-white"
-                >
-                  {name}
-                </motion.a>
-              ))}
-            </motion.div>
-          </motion.aside>
-        )}
-      </AnimatePresence> */}
     </div>
   )
 }
