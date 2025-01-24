@@ -51,17 +51,14 @@ export default function SocialMedia() {
       <Swiper
         modules={[ Autoplay]}
         breakpoints={{
-          // when window width is >= 320px
           320: {
             slidesPerView: 2,
             spaceBetween: 20
           },
-          // when window width is >= 640px
           640: {
             slidesPerView: 2,
             spaceBetween: 50
           },
-          // when window width is >= 640px
           900: {
             slidesPerView: 3.2,
             spaceBetween: 50

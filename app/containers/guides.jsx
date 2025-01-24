@@ -33,12 +33,10 @@ export default function Guides() {
         className='w-full h-[500px] gap-4 z-10 py-12'
         loop
         breakpoints={{
-          // when window width is >= 320px
           320: {
             slidesPerView: 1.3,
             spaceBetween: 20
           },
-          // when window width is >= 640px
           640: {
             slidesPerView: 5,
             spaceBetween: 50

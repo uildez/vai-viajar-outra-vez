@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import { useState, useRef, useEffect } from "react";
 import { motion, useSpring, useTransform } from "framer-motion";
@@ -10,7 +10,7 @@ const _ = {
   speed: 2,
   threshold: 0.014,
   wheelFactor: 1.8,
-  dragFactor: 1.2
+  dragFactor: 1.2,
 };
 
 const MarqueeItem = ({ content, speed, personalized }) => {
@@ -32,8 +32,7 @@ const MarqueeItem = ({ content, speed, personalized }) => {
     rect.current = item.current.getBoundingClientRect();
   }, [width, height]);
 
-  // const buffer = useRef(0);
-  const loop = (e) => {
+  const loop = () => {
     x.current -= speed.get();
     setX();
   };
@@ -47,31 +46,39 @@ const MarqueeItem = ({ content, speed, personalized }) => {
   );
 };
 
-const InteractiveMarquee = ({text, personalized}) => {
+const InteractiveMarquee = ({ text, personalized }) => {
   const marquee = useRef(null);
   const slowDown = useRef(false);
   const isScrolling = useRef(false);
   const constraintsRef = useRef(null);
 
   const x = useRef(0);
-  const w = useRef(window.innerWidth).current;
+  const [w, setW] = useState(0);
   const speed = useSpring(_.speed, {
     damping: 40,
     stiffness: 90,
-    mass: 5
+    mass: 5,
   });
   const opacity = useTransform(speed, [-w * 0.25, 0, w * 0.25], [1, 0, 1]);
   const skewX = useTransform(speed, [-w * 0.25, 0, w * 0.25], [-25, 0, 25]);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setW(window.innerWidth);
+    }
+  }, []);
 
   const onWheel = (e) => {
     const normalized = normalizeWheel(e);
     x.current = normalized.pixelY * _.wheelFactor;
 
     // Reset speed on scroll end
-    window.clearTimeout(isScrolling.current);
-    isScrolling.current = setTimeout(function () {
-      speed.set(_.speed);
-    }, 30);
+    if (typeof window !== "undefined") {
+      window.clearTimeout(isScrolling.current);
+      isScrolling.current = setTimeout(function () {
+        speed.set(_.speed);
+      }, 30);
+    }
   };
 
   const onDragStart = () => {
@@ -84,7 +91,7 @@ const InteractiveMarquee = ({text, personalized}) => {
     speed.set(_.dragFactor * -info.delta.x);
   };
 
-  const onDragEnd = (e) => {
+  const onDragEnd = () => {
     slowDown.current = false;
     marquee.current.classList.remove("drag");
     x.current = _.speed;
@@ -125,8 +132,6 @@ const InteractiveMarquee = ({text, personalized}) => {
   );
 };
 
-export default function Marquee({textContent, personalized}) {
-  return (
-    <InteractiveMarquee text={textContent} personalized={personalized}/>
-  )
+export default function Marquee({ textContent, personalized }) {
+  return <InteractiveMarquee text={textContent} personalized={personalized} />;
 }
