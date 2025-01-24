@@ -21,7 +21,7 @@ export default function Youtube() {
         </h2>
         <div className='relative px-8 lg:px-0'>
           <h2 className='text-4xl lg:text-6xl text-center lg:text-left text-white font-redonda uppercase'>
-            <strong>mil </strong><br className='hidden lg:flex'/>
+            <strong>mil </strong><br className='hidden lg:flex' />
             <span className='font-redonda font-semibold'>inscritos</span><br />
             NO youtube
           </h2>
@@ -30,12 +30,12 @@ export default function Youtube() {
             className='flex w-fit mt-8 text-lg lg:text-3xl items-center justify-center border-2 border-yellow-600 text-yellow-600 rounded-[20px] uppercase px-8 py-2 hover:rotate-2 hover:-translate-y-2 transition-transform duration-500'
             target='_blank'
           >
-            Acessar Youtube <GoArrowUpRight className='text-3xl'/>
+            Acessar Youtube <GoArrowUpRight className='text-3xl' />
           </a>
         </div>
       </div>
       <Swiper
-      modules={[ Autoplay]}
+        modules={[Autoplay]}
         breakpoints={{
           320: {
             slidesPerView: 1.2,
@@ -54,14 +54,17 @@ export default function Youtube() {
           delay: 2000,
         }}
       >
-        <SwiperSlide style={{ display: 'flex' }} className="flex cursor-pointer items-center justify-center aspect-video w-full overflow-hidden bg-[url('/webp/video-1.webp')] bg-center bg-cover bg-no-repeat rounded-3xl">
-          <FaRegCirclePlay className="z-10 text-gray-200/70 text-8xl hover:scale-110 transition-transform duration-500 ease-in-out" />
+        <SwiperSlide style={{ display: 'flex' }} className="flex cursor-pointer items-center justify-center aspect-video group w-full hover:scale-105 overflow-hidden bg-[url('/webp/video-1.webp')] bg-center bg-cover bg-no-repeat rounded-3xl">
+          <FaRegCirclePlay className="z-10 text-gray-200/70 text-8xl group-hover:scale-110 transition-transform duration-500 ease-in-out" />
         </SwiperSlide>
-        <SwiperSlide style={{ display: 'flex' }} className="flex cursor-pointer items-center justify-center aspect-video w-full overflow-hidden bg-[url('/webp/video-2.webp')] bg-center bg-cover bg-no-repeat rounded-3xl">
-          <FaRegCirclePlay className="z-10 text-gray-200/70 text-8xl hover:scale-110 transition-transform duration-500 ease-in-out" />
+        <SwiperSlide style={{ display: 'flex' }} className="flex cursor-pointer items-center justify-center aspect-video group w-full hover:scale-105 overflow-hidden bg-[url('/webp/video-2.webp')] bg-center bg-cover bg-no-repeat rounded-3xl">
+          <FaRegCirclePlay className="z-10 text-gray-200/70 text-8xl group-hover:scale-110 transition-transform duration-500 ease-in-out" />
         </SwiperSlide>
-        <SwiperSlide style={{ display: 'flex' }} className="flex cursor-pointer items-center justify-center aspect-video w-full overflow-hidden bg-[url('/webp/video-3.webp')] bg-center bg-cover bg-no-repeat rounded-3xl">
-          <FaRegCirclePlay className="z-10 text-gray-200/70 text-8xl hover:scale-110 transition-transform duration-500 ease-in-out" />
+        <SwiperSlide style={{ display: 'flex' }} className="flex cursor-pointer items-center justify-center aspect-video group w-full hover:scale-105 overflow-hidden bg-[url('/webp/video-3.webp')] bg-center bg-cover bg-no-repeat rounded-3xl">
+          <FaRegCirclePlay className="z-10 text-gray-200/70 text-8xl group-hover:scale-110 transition-transform duration-500 ease-in-out" />
+        </SwiperSlide>
+        <SwiperSlide style={{ display: 'flex' }} className="flex cursor-pointer items-center justify-center aspect-video group w-full hover:scale-105 overflow-hidden bg-[url('/webp/video-1.webp')] bg-center bg-cover bg-no-repeat rounded-3xl">
+          <FaRegCirclePlay className="z-10 text-gray-200/70 text-8xl group-hover:scale-110 transition-transform duration-500 ease-in-out" />
         </SwiperSlide>
       </Swiper>
     </div>

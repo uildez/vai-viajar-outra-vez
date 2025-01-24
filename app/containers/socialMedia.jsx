@@ -37,19 +37,29 @@ export default function SocialMedia() {
   return (
     <div className='relative my-20'>
       <div className='flex flex-col lg:flex-row items-center justify-center w-full gap-4 lg:gap-12 mx-auto'>
-        <h2 className='text-9xl lg:text-[12rem] leading-[0.9] text-blue-600 font-bold font-akina uppercase'>
+        <motion.h2
+          initial={{ x: 50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: false, amount: 0.3, duration: 1 }}
+          className='text-9xl lg:text-[12rem] leading-[0.9] text-blue-600 font-bold font-akina uppercase'
+        >
           101k
-        </h2>
-        <div className='relative text-center lg:text-left'>
+        </motion.h2>
+        <motion.div
+          initial={{ x: -50, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: false, amount: 0.3, duration: 1 }}
+          className='relative text-center lg:text-left'
+        >
           <h2 className='text-4xl lg:text-6xl text-blue-600 font-redonda uppercase'>
-            <strong>de <br className='hidden lg:flex'/>seguidores</strong><br />
+            <strong>de <br className='hidden lg:flex' />seguidores</strong><br />
             NO INSTAGRAM
           </h2>
           <InstagramTitle />
-        </div>
+        </motion.div>
       </div>
       <Swiper
-        modules={[ Autoplay]}
+        modules={[Autoplay]}
         breakpoints={{
           320: {
             slidesPerView: 2,

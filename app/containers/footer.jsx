@@ -23,13 +23,13 @@ export default function Footer() {
         </button>
       </form>
       <div className='flex items-center gap-4'>
-        <a href='' className='flex items-center justify-center rounded-full bg-white hover:bg-yellow-600 hover:-translate-y-4 w-[50px] h-[50px]'>
+        <a href='' className='flex items-center justify-center rounded-full bg-white hover:bg-yellow-600 hover:-translate-y-2 hover:scale-105 w-[50px] h-[50px] transition-all duration-500 ease-in-out'>
           <FaInstagram className="text-2xl text-blue-800" />
         </a>
-        <a href='' className='flex items-center justify-center rounded-full bg-white hover:bg-yellow-600 hover:-translate-y-4 w-[50px] h-[50px]'>
+        <a href='' className='flex items-center justify-center rounded-full bg-white hover:bg-yellow-600 hover:-translate-y-2 hover:scale-105 w-[50px] h-[50px] transition-all duration-500 ease-in-out'>
           <FaYoutube className="text-2xl text-blue-800" />
         </a>
-        <a href='' className='flex items-center justify-center rounded-full bg-white hover:bg-yellow-600 hover:-translate-y-4 w-[50px] h-[50px]'>
+        <a href='' className='flex items-center justify-center rounded-full bg-white hover:bg-yellow-600 hover:-translate-y-2 hover:scale-105 w-[50px] h-[50px] transition-all duration-500 ease-in-out'>
           <FaTiktok className="text-2xl text-blue-800" />
         </a>
       </div>

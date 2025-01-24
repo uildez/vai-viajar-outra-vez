@@ -5,7 +5,9 @@ import React from 'react'
 import ProductTitleDown from '../components/productTitleDown';
 import ProductTitleUp from '../components/productTitleUp';
 import ProductImage from '../components/productImage';
-import Marquee from '../components/marquee';
+import Marquee from
+  '../components/marquee';
+import { motion } from 'motion/react';
 
 export default function Products() {
   return (
@@ -67,10 +69,16 @@ export default function Products() {
 
 
         <div className='flex h-[100px] w-full bg-yellow-600 z-10'>
-          <Marquee textContent={"@vaiviajaroutravez @vaiviajaroutravez @vaiviajaroutravez @vaiviajaroutravez"} personalized={"leading-[-0.05em] item uppercase text-blue-600 font-akina font-bold text-3xl flex-nowrap"}/>
+          <Marquee textContent={"@vaiviajaroutravez @vaiviajaroutravez @vaiviajaroutravez @vaiviajaroutravez"} personalized={"leading-[-0.05em] item uppercase text-blue-600 font-akina font-bold text-3xl flex-nowrap"} />
         </div>
       </div>
-      <div className='absolute bottom-0 bg-blue-600 h-[80%] lg:h-[50%] w-full -z-0' />
+      <motion.section
+        initial={{ background: "rgba(0,0,0,0)" }}
+        whileInView={{ background: "#0055cf" }}
+        viewport={{ once: false }}
+        transition={{ delay: 1, amount: 5, duration: .5, ease: 'easeInOut' }}
+        className='absolute bottom-0 h-[80%] lg:h-[50%] w-full -z-0'
+      />
     </div>
   )
 }
