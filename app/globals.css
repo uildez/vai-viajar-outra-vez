@@ -55,3 +55,100 @@ body {
 .aspect-guides {
   aspect-ratio: 9 / 16;
 }
+
+
+/* Scroll Words */
+.marquee {
+  display: flex;
+  align-items: center;
+  cursor: -webkit-grab;
+}
+
+.item {
+  font-size: 2vw;
+  padding-right: 0.25em;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.drag {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+.bg {
+  height: 100%;
+  width: 100%;
+}
+
+.swiper {
+  overflow: visible!important
+}
+
+.swiper-pagination {
+  padding-top: 200px;
+  transform: scale(1.5)!important
+}
+
+.swiper-button-next {
+  background: rgb(0 85 207 / var(--tw-text-opacity, 0.8));
+  width: 100px!important;
+  height: 100px!important;
+  border-radius: 100%!important;
+  color: #fff!important;
+  display: flex!important;
+  justify-content: center!important;
+  align-items: center!important;
+  transform: translateX(-10rem)!important;
+  z-index: 20!important
+}
+
+.swiper-button-prev {
+  background: rgb(0 85 207 / var(--tw-text-opacity, 0.8));
+  width: 100px!important;
+  height: 100px!important;
+  border-radius: 100%!important;
+  color: #fff!important;
+  display: flex!important;
+  justify-content: center!important;
+  align-items: center!important;
+  transform: translateX(10rem)!important;
+  z-index: 20!important
+}
+
+@media (max-width: 600px){
+  .item {
+    font-size: 10vw;
+  }
+
+  .swiper-button-next {
+    background: rgb(0 85 207 / var(--tw-text-opacity, 0.8));
+    width: 50px!important;
+    height: 50px!important;
+    border-radius: 100%!important;
+    color: #fff!important;
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+    transform: translateX(-2rem)!important;
+    z-index: 20!important
+  }
+  
+  .swiper-button-prev {
+    background: rgb(0 85 207 / var(--tw-text-opacity, 0.8));
+    width: 50px!important;
+    height: 50px!important;
+    border-radius: 100%!important;
+    color: #fff!important;
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center!important;
+    transform: translateX(2rem)!important;
+    z-index: 20!important
+  }
+
+  .swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 15px!important;
+  }
+}

@@ -2,14 +2,15 @@ import { motion } from 'framer-motion';
 
 const YoutubeTitle = () => (
   <motion.svg
+    className="absolute -left-12 lg:-left-16 -top-6 lg:top-4 w-[60px] h-[60px] lg:w-[80px] lg:h-[80px]"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 87.16 134.73"
+    viewport={{ once: true, amount: 0.2 }}
     initial="initial"
-    animate="animate"
-    className="absolute -left-16 top-4 w-[80px] h-[80px]"
+    whileInView="visible"
     variants={{
-      initial: { opacity: 0 },
-      animate: { opacity: 1, transition: { duration: 1.5 } }
+      initial: { pathLength: 0 },
+      visible: { pathLength: 1, transition: { duration: .5, delay: 0.3 } },
     }}
   >
     <defs>

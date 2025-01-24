@@ -7,7 +7,7 @@ const ProductTitleDown = () => {
       data-name="Camada 2"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 60 60.78"
-      className="absolute -left-8 -bottom-8 w-[80px] h-[80px]"
+      className="absolute -left-4 -bottom-4 lg:-left-8 lg:-bottom-8 w-[40px] lg:w-[80px] h-[40px] lg:h-[80px]"
     >
       <defs>
         <style>

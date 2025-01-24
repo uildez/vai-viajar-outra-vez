@@ -6,8 +6,14 @@ const AnimatedSVG = () => {
     <motion.svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 75.45 103.3"
-      initial="hidden"
-      animate="animate"
+      viewport={{ once: true, amount: 0.2 }}
+      initial="initial"
+      whileInView="visible"
+      variants={{
+        initial: { pathLength: 0 },
+        visible: { pathLength: 1, transition: { duration: .5, delay: 0.3 } },
+      }}
+   
       width="200"
       height="300"
       className="absolute top-0 -left-16 scale-50 translate-y-[-50%] translate-x-[-50%]"

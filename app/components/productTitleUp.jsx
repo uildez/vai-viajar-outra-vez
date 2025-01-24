@@ -7,7 +7,7 @@ const ProductTitleUp = () => {
       data-name="Camada 2"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 57.33 55.25"
-      className="absolute -right-8 -top-8 w-[80px] h-[80px]"
+      className="absolute -right-4 lg:-right-8 -top-4 lg:-top-8 w-[40px] lg:w-[80px] h-[40px] lg:h-[80px]"
     >
       <defs>
         <style>

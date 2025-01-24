@@ -7,7 +7,7 @@ const ProductImage = () => {
       data-name="Camada 2"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 89.77 70.06"
-      className="absolute right-2 -top-8 w-[80px] h-[80px]"
+      className="absolute right-2 -top-8 w-[30px] lg:w-[80px] h-[30px] lg:h-[80px]"
     >
       <defs>
         <style>

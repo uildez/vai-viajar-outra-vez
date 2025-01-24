@@ -10,7 +10,7 @@ import Youtube from "./containers/youtube";
 
 export default function Home() {
   return (
-    <div className="font-redonda overflow-hidden">
+    <div className="font-redonda overflow-hidden max-w-screen">
       <Navbar />
       <Header />
       <About />

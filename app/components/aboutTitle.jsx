@@ -6,10 +6,14 @@ const AboutTitle = () => {
     <motion.svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 47.35 79.7"
-      initial="hidden"
-      animate="animate"
-      width="70"
-      height="70"
+      viewport={{ once: true, amount: 0.2 }}
+      initial="initial"
+      whileInView="visible"
+      variants={{
+        initial: { pathLength: 0 },
+        visible: { pathLength: 1, transition: { duration: .5, delay: 0.3 } },
+      }}
+      className="w-[40px] h-[40px] lg:w-[60px] lg:h-[60px]"
     >
       <motion.g
         id="Camada_1-2"

@@ -3,6 +3,7 @@
 import React from 'react'
 
 import { motion } from 'motion/react';
+import { IoLockClosedOutline } from "react-icons/io5";
 
 const itemVariants = {
   closed: {
@@ -36,10 +37,10 @@ export default function Navbar() {
   ];
 
   return (
-    <div className={`fixed w-full flex items-center justify-between h-[100px] px-8 lg:px-40 z-50 bg-blue-600`}>
+    <div className={`fixed w-full flex items-center justify-between h-[80px] lg:h-[100px] px-8 lg:px-40 z-50 bg-blue-600`}>
       <div className='flex w-full h-full items-center justify-between'>
         <img className='w-[80px] lg:w-auto' src={"/webp/logo-vai-viajar.webp"} alt='Logo Vai Viajar Outra Vez' />
-        <div className='flex items-center gap-4 lg:gap-20'>
+        <div className='items-center gap-4 lg:gap-20 hidden lg:flex'>
           <div className='flex gap-4'>
             <motion.div
               className="flex items-center gap-12 justify-center h-full"
@@ -59,6 +60,7 @@ export default function Navbar() {
             </motion.div>
           </div>
           <button className='flex items-center justify-center gap-4 px-6 py-2 bg-yellow-600 text-black rounded-[10px] uppercase font-bold hover:rotate-2 hover:-translate-y-2 transition-transform duration-500'>
+            <IoLockClosedOutline />
             Área de Membros
           </button>
         </div>
