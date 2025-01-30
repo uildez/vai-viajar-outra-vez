@@ -28,7 +28,7 @@ const slides = [
 
 export default function Guides() {
   return (
-    <div id='guias' className={`relative flex flex-col gap-12 justify-center items-center h-[80vh] w-full pb-12 pt-20`}>
+    <div id='guias' className={`relative flex flex-col gap-12 justify-center items-center h-auto w-full pb-40 lg:pb-8 pt-20`}>
       <h2 className='relative flex w-fit lg:mx-auto text-4xl lg:text-6xl text-blue-600 bg-yellow-600 px-8 py-4 font-akina uppercase z-10'>
         <GuidesDown />
         Guias de <br />Viagens
@@ -40,7 +40,7 @@ export default function Guides() {
         autoplay={{ delay: 2000 }}
         pagination={{ clickable: true }}
         centeredSlides={true}
-        className="w-full h-[500px] gap-4 z-10 py-12"
+        className="w-full h-[400px] 2xl:h-[500px] gap-4 z-10 py-12"
         loop
         breakpoints={{
           320: {
@@ -48,6 +48,10 @@ export default function Guides() {
             spaceBetween: 20,
           },
           640: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+          900:  {
             slidesPerView: 5,
             spaceBetween: 50,
           },
@@ -62,11 +66,10 @@ export default function Guides() {
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
                 width: '100%',
-                height: '100%',
                 borderRadius: '3rem',
                 overflow: 'hidden'
               }}
-              className="flex flex-col items-center justify-between w-full group pt-8 pb-12 overflow-hidden cursor-pointer shadow-2xl rounded-[50px] transition-transform duration-500 ease-in-out"
+              className="flex flex-col relative items-center justify-between h-[400px] 2xl:h-[500px] w-full group pt-8 pb-12 overflow-hidden cursor-pointer shadow-2xl rounded-[50px] transition-transform duration-500 ease-in-out"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}

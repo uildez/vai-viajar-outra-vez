@@ -13,10 +13,7 @@ const AnimatedSVG = () => {
         initial: { pathLength: 0 },
         visible: { pathLength: 1, transition: { duration: .5, delay: 0.3 } },
       }}
-   
-      width="200"
-      height="300"
-      className="absolute top-0 -left-16 scale-50 translate-y-[-50%] translate-x-[-50%]"
+      className="absolute -top-4 lg:top-0 -left-0 lg:-left-12 2xl::-left-16 lg:translate-y-[-50%] lg:translate-x-[-50%] w-[30px] h-[40px] lg:w-[100px] lg:h-[100px]"
     >
       <motion.g
         id="Camada_1-2"

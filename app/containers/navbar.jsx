@@ -53,14 +53,14 @@ export default function Navbar() {
     <div className="fixed w-full flex items-center justify-between h-[80px] lg:h-[100px] px-8 lg:px-40 z-50 bg-blue-600">
       <div className="flex w-full h-full items-center justify-between">
         <img
-          className="w-[80px] lg:w-auto"
+          className="w-[80px] lg:w-[120px] 2xl:w-[150px]"
           src={'/webp/logo-vai-viajar.webp'}
           alt="Logo Vai Viajar Outra Vez"
         />
         <div className="items-center gap-4 lg:gap-20 hidden lg:flex">
           <div className="flex gap-4">
             <motion.div
-              className="flex items-center gap-12 justify-center h-full"
+              className="flex items-center gap-8 2xl:gap-12 justify-center h-full"
               initial="closed"
               animate="open"
               variants={sideVariants}
@@ -71,7 +71,7 @@ export default function Navbar() {
                   href={to}
                   whileHover={{ translateY: -2, rotate: -2 }}
                   variants={itemVariants}
-                  className="text-2xl lg:text-xl text-white"
+                  className="text-2xl lg:text-lg 2xl:text-xl text-white"
                 >
                   {name}
                 </motion.a>
@@ -90,18 +90,21 @@ export default function Navbar() {
       <AnimatePresence>
         {openMenu && (
           <motion.aside
-            initial={{ width: '100%', height: 0 }}
-            animate={{ width: '100%', height: '100%' }}
-            exit={{ width: '100%', height: 0, transition: { delay: 0.3, duration: 0.3 } }}
-            className="fixed top-0 right-0 h-full bg-white/10 backdrop-blur-xl mt-20 z-20"
+            initial={{ width: '0%', height: 0, opacity: 0  }}
+            animate={{ width: '100%', height: "100%", opacity: 1 }}
+            exit={{ width: '100%', height: 0, transition: { delay: 0.3, duration: 0.5 } }}
+            className="fixed top-0 right-0 px-2 pt-2 z-20"
           >
             <motion.div
-              className="flex relative flex-col items-start gap-8 px-8 justify-start pt-8 h-full"
+              className="flex relative flex-col items-center bg-yellow-600 shadow-2xl rounded-2xl pt-32 gap-8 px-8 justify-start pb-20"
               initial="closed"
               animate="open"
               exit="closed"
               variants={sideVariants}
             >
+              <button className="absolute bg-blue-600 rounded-full font-akina uppercase px-4 py-2 right-4 top-4 lg:hidden" onClick={() => setOpenMenu((prev) => !prev)}>
+                fechar
+              </button>
               {links.map(({ name, to, id }) => (
                 <motion.a
                   onClick={() => setOpenMenu(false)}
@@ -109,7 +112,7 @@ export default function Navbar() {
                   href={to}
                   whileHover={{ scale: 1.1 }}
                   variants={itemVariants}
-                  className="text-3xl w-full text-center px-6 py-4 bg-yellow-600 text-black rounded-[10px] uppercase font-bold hover:rotate-2 hover:-translate-y-2 transition-transform duration-500"
+                  className="text-3xl w-full text-left px-6 bg-yellow-600 text-black rounded-[10px] uppercase font-bold hover:rotate-2 hover:-translate-y-2 transition-transform duration-500"
                 >
                   {name}
                 </motion.a>

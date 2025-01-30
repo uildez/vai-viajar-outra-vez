@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const YoutubeTitle = () => (
   <motion.svg
-    className="absolute -left-12 lg:-left-16 -top-6 lg:top-4 w-[60px] h-[60px] lg:w-[80px] lg:h-[80px]"
+    className="absolute -left-12 lg:-left-16 -top-6 lg:-top-4 w-[60px] h-[60px] lg:w-[80px] lg:h-[80px]"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 87.16 134.73"
     viewport={{ once: true, amount: 0.2 }}

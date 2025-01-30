@@ -69,7 +69,7 @@ export default function Header() {
                 variants={letterContainer}
               >
                 <motion.h1
-                  className="text-4xl lg:text-7xl text-yellow-600 font-bold font-akina uppercase"
+                  className="text-4xl text-center lg:text-left lg:text-7xl text-yellow-600 font-bold font-akina uppercase"
                 >
                   {line.split("").map((char, charIndex) => (
                     <motion.span
@@ -84,7 +84,7 @@ export default function Header() {
               </motion.div>
             ))}
           </motion.div>
-          <p className='text-lg 2xl:text-2xl w-full lg:w-3/4'>Está buscando o guia completo para conhecer o Brasil e as melhores cidades internacionais pelo melhor preço? <strong>Aqui é o seu lugar!</strong></p>
+          <p className='text-lg 2xl:text-2xl w-full lg:w-3/4 text-center lg:text-left'>Está buscando o guia completo para conhecer o Brasil e as melhores cidades internacionais pelo melhor preço? <strong>Aqui é o seu lugar!</strong></p>
         </div>
       </div>
 

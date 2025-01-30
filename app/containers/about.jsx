@@ -118,18 +118,18 @@ export default function About() {
             />
           ))}
         </motion.div>
-        <div className='hidden lg:block absolute h-[60vh] left-[40%] top-1/2 transform -translate-x-1/2 -translate-y-[65%] z-20 w-[400px]'>
+        <div className='hidden lg:block absolute h-[60vh] left-[40%] top-1/3 transform -translate-x-1/2 -translate-y-[65%] z-20 w-[300px] 2xl:w-[400px]'>
           <img className='absolute w-[50px] lg:w-auto z-30 image-man' src={"/webp/man-about.webp"} alt='Foto de viagem para Maragogi' />
           <img className='absolute w-[50px] lg:w-auto ml-4 z-20 image-border' src={"/webp/man-bg-silhueta.webp"} alt='Foto de viagem para Maragogi' />
         </div>
-        <div className='flex flex-col gap-4 w-full lg:w-3/5 pl-0 lg:pl-40 lg:gap-8'>
+        <div className='flex flex-col gap-4 w-full lg:w-3/5 pl-0 lg:pl-28 2xl::pl-40 lg:gap-8'>
           <div className='flex lg:gap-4 justify-center lg:justify-start relative'>
             <h2 className='text-4xl lg:text-6xl text-yellow-600 font-bold font-akina uppercase'>
               Sobre
             </h2>
             <AboutTitle />
           </div>
-          <p className='text-lg'>
+          <p className='lg:text-base 2xl:text-lg'>
             Oi, somos a <strong>Elizabete</strong> e <strong>Rodrigo</strong>, um casal apaixonado por viagens, e através da <strong>“Vai Viajar Outra Vez?”</strong> buscamos mostrar experiências autênticas, compartilhando dicas práticas, acessíveis e experiências reais para nossa audiência.
             <br />
             <br />
