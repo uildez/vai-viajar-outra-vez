@@ -11,6 +11,8 @@ import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 
+export const runtime = 'edge';
+
 export default function Youtube() {
   return (
     <div className='flex flex-col gap-12 bg-blue-600 py-12'>

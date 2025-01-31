@@ -5,6 +5,8 @@ import { MdEmail } from 'react-icons/md';
 
 import { FaInstagram, FaYoutube, FaTiktok } from "react-icons/fa";
 
+export const runtime = 'edge';
+
 export default function Footer() {
   return (
     <div className='flex flex-col lg:flex-row items-center justify-between w-full mx-auto gap-12 lg:gap-4 px-8 lg:px-40 py-20 bg-blue-800'>

@@ -9,6 +9,8 @@ export const metadata = {
   },
 };
 
+export const runtime = 'edge';
+
 export default function RootLayout({ children }) {
   return (
     <html lang="pt" className='scroll-smooth' style={{ scrollBehavior: 'smooth' }}>

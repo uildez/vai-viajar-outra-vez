@@ -28,4 +28,6 @@ const GuidesDown = () => {
   );
 };
 
+export const runtime = 'edge';
+
 export default GuidesDown;

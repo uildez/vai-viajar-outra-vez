@@ -57,4 +57,6 @@ const YoutubeTitle = () => (
   </motion.svg>
 );
 
+export const runtime = 'edge';
+
 export default YoutubeTitle;

@@ -35,6 +35,8 @@ const gridVariants = {
   },
 };
 
+export const runtime = 'edge';
+
 export default function About() {
   useEffect(() => {
     const elements = [".image-man", ".image-border"];

@@ -132,6 +132,8 @@ const InteractiveMarquee = ({ text, personalized }) => {
   );
 };
 
+export const runtime = 'edge';
+
 export default function Marquee({ textContent, personalized }) {
   return <InteractiveMarquee text={textContent} personalized={personalized} />;
 }

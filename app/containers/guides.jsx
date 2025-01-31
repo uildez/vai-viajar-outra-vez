@@ -26,6 +26,8 @@ const slides = [
   { id: 7, title: 'Orlando', background: '/webp/orlando.webp' },
 ];
 
+export const runtime = 'edge';
+
 export default function Guides() {
   return (
     <div id='guias' className={`relative flex flex-col gap-12 justify-center items-center h-auto w-full pb-40 lg:pb-8 pt-20`}>

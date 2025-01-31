@@ -38,6 +38,8 @@ const sideVariants = {
   },
 };
 
+export const runtime = 'edge';
+
 export default function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
 

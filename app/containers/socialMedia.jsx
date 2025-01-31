@@ -12,6 +12,8 @@ import InstagramTitle from '../components/instagramTitle';
 
 import 'swiper/css/autoplay';
 
+export const runtime = 'edge';
+
 export default function SocialMedia() {
   const scrollRef = useRef(null);
 

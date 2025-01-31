@@ -29,6 +29,8 @@ const letterVariant = {
   },
 };
 
+export const runtime = 'edge';
+
 export default function Header() {
   const scrollRef = useRef(null);
 

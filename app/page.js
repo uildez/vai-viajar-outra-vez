@@ -8,6 +8,8 @@ import Products from "./containers/products";
 import SocialMedia from "./containers/socialMedia";
 import Youtube from "./containers/youtube";
 
+export const runtime = 'edge';
+
 export default function Home() {
   return (
     <div className="font-redonda overflow-hidden max-w-screen">

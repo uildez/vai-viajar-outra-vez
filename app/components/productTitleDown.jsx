@@ -27,4 +27,6 @@ const ProductTitleDown = () => {
   );
 };
 
+export const runtime = 'edge';
+
 export default ProductTitleDown;

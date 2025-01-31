@@ -4,6 +4,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
+export const runtime = 'edge';
+
 export default function Member() {
   return (
     <div id='cupons' className='flex relative items-start min-h-[100vh] lg:min-h-[80vh] justify-start w-full mx-auto gap-4 px-8 lg:px-40 py-20 bg-yellow-600'>
