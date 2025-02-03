@@ -36,6 +36,6 @@ const AboutImages = () => {
   );
 };
 
-export const runtime = 'edge';
+
 
 export default AboutImages;

@@ -44,6 +44,6 @@ const ProductImage = () => {
   );
 };
 
-export const runtime = 'edge';
+
 
 export default ProductImage;

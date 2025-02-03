@@ -36,6 +36,6 @@ const InstagramTitle = () => {
   );
 };
 
-export const runtime = 'edge';
+
 
 export default InstagramTitle;

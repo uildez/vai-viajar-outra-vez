@@ -26,7 +26,7 @@ const slides = [
   { id: 7, title: 'Orlando', background: '/webp/orlando.webp' },
 ];
 
-export const runtime = 'edge';
+
 
 export default function Guides() {
   return (

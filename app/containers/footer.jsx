@@ -5,7 +5,7 @@ import { MdEmail } from 'react-icons/md';
 
 import { FaInstagram, FaYoutube, FaTiktok } from "react-icons/fa";
 
-export const runtime = 'edge';
+
 
 export default function Footer() {
   return (

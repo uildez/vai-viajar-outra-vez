@@ -25,6 +25,6 @@ const GuidesUp = () => {
   );
 };
 
-export const runtime = 'edge';
+
 
 export default GuidesUp;

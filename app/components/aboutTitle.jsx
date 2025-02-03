@@ -69,6 +69,6 @@ const AboutTitle = () => {
   );
 };
 
-export const runtime = 'edge';
+
 
 export default AboutTitle;

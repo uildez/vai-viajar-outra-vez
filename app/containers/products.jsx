@@ -9,7 +9,7 @@ import Marquee from
   '../components/marquee';
 import { motion } from 'motion/react';
 
-export const runtime = 'edge';
+
 
 export default function Products() {
   return (

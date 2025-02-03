@@ -35,7 +35,7 @@ const gridVariants = {
   },
 };
 
-export const runtime = 'edge';
+
 
 export default function About() {
   useEffect(() => {

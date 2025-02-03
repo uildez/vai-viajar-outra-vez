@@ -73,6 +73,6 @@ const AnimatedSVG = () => {
   );
 };
 
-export const runtime = 'edge';
+
 
 export default AnimatedSVG;
