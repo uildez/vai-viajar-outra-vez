@@ -67,7 +67,7 @@ export default function Header() {
             {textLines.map((line, lineIndex) => (
               <motion.div
                 key={lineIndex}
-                className="overflow-hidden" // Garante que o movimento da animação não extrapole visualmente
+                className="overflow-hidden" 
                 variants={letterContainer}
               >
                 <motion.h1

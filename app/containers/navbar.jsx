@@ -8,6 +8,7 @@ import { HiBars2 } from "react-icons/hi2";
 import { CgClose } from "react-icons/cg";
 
 import { FaInstagram, FaYoutube, FaTiktok } from "react-icons/fa";
+import Link from 'next/link';
 
 const itemVariants = {
   closed: {
@@ -48,17 +49,20 @@ export default function Navbar() {
     { name: 'Sobre', to: '#sobre', id: 2 },
     { name: 'Guias', to: '#guias', id: 3 },
     { name: 'Produtos', to: '#produtos', id: 4 },
-    { name: 'Cupons', to: '#cupons', id: 5 },
+    { name: 'Cupons', to: '/cupons', id: 5 },
+    { name: 'Ingressos', to: 'https://vaiviajaroutravez.justtraveltour.com/ingressos/UNIVERSAL%20ORLANDO%20RESORT/7?destination=Orlando&destinationCode=2&destinationState=Florida&destinationStateCode=2&date=2025-03-21&utm_source=Slide&utm_medium=Ingressos+Universal+15-09-2022&utm_campaign=Ingressos+para+Univesal&utm_id=Universal+Orlando+Resort', id: 6 },
   ];
 
   return (
     <div className="fixed w-full flex items-center justify-between h-[80px] lg:h-[100px] px-8 lg:px-40 z-50 bg-blue-600">
       <div className="flex w-full h-full items-center justify-between">
-        <img
-          className="w-[80px] lg:w-[120px] 2xl:w-[150px]"
-          src={'/webp/logo-vai-viajar.webp'}
-          alt="Logo Vai Viajar Outra Vez"
-        />
+        <Link href="/">
+          <img
+            className="w-[80px] lg:w-[120px] 2xl:w-[150px]"
+            src={'/webp/logo-vai-viajar.webp'}
+            alt="Logo Vai Viajar Outra Vez"
+          />
+        </Link>
         <div className="items-center gap-4 lg:gap-20 hidden lg:flex">
           <div className="flex gap-4">
             <motion.div
@@ -92,7 +96,7 @@ export default function Navbar() {
       <AnimatePresence>
         {openMenu && (
           <motion.aside
-            initial={{ width: '0%', height: 0, opacity: 0  }}
+            initial={{ width: '0%', height: 0, opacity: 0 }}
             animate={{ width: '100%', height: "100%", opacity: 1 }}
             exit={{ width: '100%', height: 0, transition: { delay: 0.3, duration: 0.5 } }}
             className="fixed top-0 right-0 px-2 pt-2 z-20"

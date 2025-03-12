@@ -1,0 +1,37 @@
+{
+  "name": "vai-viajar-outra-vez",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@opennextjs/aws": "^3.4.1",
+    "@react-hook/window-size": "^3.1.1",
+    "cloudflare": "^4.0.0",
+    "esbuild": "^0.24.2",
+    "gsap": "^3.12.7",
+    "motion": "^12.0.1",
+    "next": "^15.1.6",
+    "normalize-wheel": "^1.0.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.4.0",
+    "react-use": "^17.6.0",
+    "react-use-measure": "^2.1.1",
+    "swiper": "^11.2.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@opennextjs/cloudflare": "^0.4.3",
+    "eslint": "^9",
+    "eslint-config-next": "15.1.6",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  }
+}

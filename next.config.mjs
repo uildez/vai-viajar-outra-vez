@@ -1,8 +1,4 @@
-// next.config.mjs
- 
-import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
- 
-initOpenNextCloudflareForDev();
+// next.config.mjs 
  
 /** @type {import('next').NextConfig} */
 const nextConfig = {};
