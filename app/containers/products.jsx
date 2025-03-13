@@ -5,11 +5,8 @@ import React from 'react'
 import ProductTitleDown from '../components/productTitleDown';
 import ProductTitleUp from '../components/productTitleUp';
 import ProductImage from '../components/productImage';
-import Marquee from
-  '../components/marquee';
+import Marquee from '../components/marquee';
 import { motion } from 'motion/react';
-
-
 
 export default function Products() {
   return (
@@ -77,7 +74,7 @@ export default function Products() {
       <motion.section
         initial={{ background: "rgba(0,0,0,0)" }}
         whileInView={{ background: "#0055cf" }}
-        viewport={{ once: false }}
+        viewport={{ once: true }}
         transition={{ delay: 1, amount: 5, duration: .5, ease: 'easeInOut' }}
         className='absolute bottom-0 h-[80%] lg:h-[50%] w-full -z-0'
       />
