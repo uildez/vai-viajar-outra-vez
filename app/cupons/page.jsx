@@ -29,7 +29,7 @@ export default function Page() {
                 }, 5000);
 
                 setTimeout(() => {
-                    window.open(link, "_blank");
+                    // window.open(link, "_blank");
                 }, 3000);
             })
             .catch((err) => {
@@ -65,7 +65,7 @@ export default function Page() {
                                     </div>
                                     <button
                                         onClick={() => handleCopyAndRedirect(cupom.codigo, cupom.link)}
-                                        className='flex items-center w-full justify-center gap-4 px-6 py-2 mt-4 bg-yellow-600 text-black rounded-[10px] uppercase font-bold hover:rotate-2 hover:-translate-y-2 transition-transform duration-500'
+                                        className='flex items-center w-full justify-center  gap-4 px-6 py-2 mt-4 bg-yellow-600 text-black rounded-[10px] uppercase font-bold hover:rotate-2 hover:-translate-y-2 transition-transform duration-500'
                                     >
                                         Copiar Cupom e ir para página
                                     </button>
@@ -88,12 +88,12 @@ export default function Page() {
                     initial={{ y: 50, opacity: 0 }}
                     animate={{ y: 0, opacity: 1 }}
                     exit={{ y: 50, opacity: 0 }}
-                    transition={{ duration: 0.5, ease: "easeOut" }} className='fixed flex bottom-4 p-4 gap-8 rounded-xl shadow-2xl right-4 bg-blue-600 text-white'
+                    transition={{ duration: 0.5, ease: "easeOut" }} className='fixed flex bottom-4 p-4 gap-8 rounded-xl shadow-2xl right-4 bg-blue-600 text-white font-bold font-akina uppercase'
                 >
                     <MdModeOfTravel className='text-5xl' />
                     <div className='flex flex-col gap-2'>
                         <h2 className='font-bold font-akina uppercase'>Código copiado</h2>
-                        <p className='text-sm'>Você será redirecionado para o site!</p>
+                        <p className='text-sm font-redonda normal-case'>Você será redirecionado para o site!</p>
                     </div>
                 </motion.div>
             }
