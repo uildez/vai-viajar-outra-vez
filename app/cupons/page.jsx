@@ -29,7 +29,7 @@ export default function Page() {
                 }, 5000);
 
                 setTimeout(() => {
-                    // window.open(link, "_blank");
+                    window.open(link, "_blank");
                 }, 3000);
             })
             .catch((err) => {
@@ -92,8 +92,8 @@ export default function Page() {
                 >
                     <MdModeOfTravel className='text-5xl' />
                     <div className='flex flex-col gap-2'>
-                        <h2 className='font-bold font-akina uppercase'>Código copiado</h2>
-                        <p className='text-sm font-redonda normal-case'>Você será redirecionado para o site!</p>
+                        <h2 className='font-bold font-redonda uppercase'>Código copiado</h2>
+                        <p className='text-sm font-redonda font-normal normal-case'>Você será redirecionado para o site!</p>
                     </div>
                 </motion.div>
             }
