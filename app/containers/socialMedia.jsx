@@ -45,7 +45,7 @@ export default function SocialMedia() {
           viewport={{ once: false, amount: 0.3, duration: 1 }}
           className='text-9xl lg:text-[12rem] leading-[0.9] -mt-24 text-blue-600 font-bold font-akina uppercase'
         >
-          101k
+          105k
         </motion.h2>
         <motion.div
           initial={{ x: -50, opacity: 0 }}
