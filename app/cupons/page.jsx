@@ -45,7 +45,7 @@ export default function Page() {
                     initial={{ opacity: 0, y: -500 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ ease: "easeInOut", duration: 1 }}
-                    className="flex flex-col mt-16 text-4xl text-center lg:text-3xl 2xl:text-5xl text-blue-600 font-bold font-akina uppercase"
+                    className="flex flex-col mt-16 text-3xl text-center lg:text-3xl 2xl:text-4xl text-blue-600 font-bold font-akina uppercase"
                 >
                     Confira abaixo nossos cupons
                     <span className='text-2xl font-light mt-4 font-redonda'>
@@ -69,6 +69,9 @@ export default function Page() {
                                     >
                                         Copiar Cupom e ir para página
                                     </button>
+                                    <Link href={cupom.link} target='_blank' className='text-center margin-auto pt-4 hover:-translate-y-1 transition-all ease-in-out duration-500'>
+                                        Ou clique aqui para visitar o site
+                                    </Link>
                                 </div>
                             </div>
                         ))}
