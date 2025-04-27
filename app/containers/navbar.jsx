@@ -9,6 +9,7 @@ import { CgClose } from "react-icons/cg";
 
 import { FaInstagram, FaYoutube, FaTiktok } from "react-icons/fa";
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 const itemVariants = {
   closed: {
@@ -39,18 +40,33 @@ const sideVariants = {
   },
 };
 
-
-
 export default function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
+  const router = useRouter();
+  
+  function handleNavigation(to) {
+    if (to.startsWith('#')) {
+      if (window.location.pathname === '/') {
+        const element = document.querySelector(to);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      } else {
+        router.push(`/${to}`);
+      }
+    } else {
+      router.push(to);
+    }
+  }
 
   const links = [
-    { name: 'Home', to: '#inicio', id: 1 },
+    { name: 'Início', to: '#inicio', id: 1 },
     { name: 'Sobre', to: '#sobre', id: 2 },
     { name: 'Guias', to: '#guias', id: 3 },
     { name: 'Produtos', to: '#produtos', id: 4 },
     { name: 'Cupons', to: '/cupons', id: 5 },
-    { name: 'Ingressos', to: 'https://vaiviajaroutravez.justtraveltour.com/ingressos/UNIVERSAL%20ORLANDO%20RESORT/7?destination=Orlando&destinationCode=2&destinationState=Florida&destinationStateCode=2&date=2025-03-21&utm_source=Slide&utm_medium=Ingressos+Universal+15-09-2022&utm_campaign=Ingressos+para+Univesal&utm_id=Universal+Orlando+Resort', id: 6 },
+    { name: 'Indicações', to: '/indicacoes', id: 6 },
+    { name: 'Ingressos', to: 'https://vaiviajaroutravez.justtraveltour.com/ingressos/UNIVERSAL%20ORLANDO%20RESORT/7?destination=Orlando&destinationCode=2&destinationState=Florida&destinationStateCode=2&date=2025-03-21&utm_source=Slide&utm_medium=Ingressos+Universal+15-09-2022&utm_campaign=Ingressos+para+Univesal&utm_id=Universal+Orlando+Resort', id: 7 },
   ];
 
   return (
@@ -72,15 +88,15 @@ export default function Navbar() {
               variants={sideVariants}
             >
               {links.map(({ name, to, id }) => (
-                <motion.a
+                <motion.button
                   key={id}
-                  href={to}
+                  onClick={() => handleNavigation(to)}
+                  className="text-2xl lg:text-lg 2xl:text-xl text-white"
                   whileHover={{ translateY: -2, rotate: -2 }}
                   variants={itemVariants}
-                  className="text-2xl lg:text-lg 2xl:text-xl text-white"
                 >
                   {name}
-                </motion.a>
+                </motion.button>
               ))}
             </motion.div>
           </div>
