@@ -22,7 +22,27 @@ export default function Products() {
             <ProductTitleDown />
           </h2>
         </div>
-        <div className='grid grid-cols-2 lg:grid-cols-4 gap-y-6 gap-x-4 lg:gap-4 w-full items-center z-10 px-4 lg:px-0'>
+        <div className='grid grid-cols-1 lg:grid-cols-3 gap-y-6 gap-x-4 lg:gap-4 w-full items-center z-10 px-4 lg:px-0'>
+          <div className='flex flex-col items-center gap-2 lg:gap-8 group'>
+            <Image src={'/webp/grupo-vip.webp'} className='w-full rounded-2xl group-hover:scale-105 transition-transform duration-500 ease-in-out' width={500} height={500} alt='Boné Vai Viajar Outra Vez' />
+            <a
+              href="#"
+              className='w-fit text-center border-2 border-white text-white text-sm lg:text-2xl rounded-[20px] uppercase px-8 py-2 group-hover:rotate-2 group-hover:-translate-y-2 transition-transform duration-500'
+              target='_blank'
+            >
+              Comprar Agora
+            </a>
+          </div>
+          <div className='flex flex-col items-center gap-2 lg:gap-8 group'>
+            <Image src={'/webp/ebook-vai-viajar.webp'} className='w-full rounded-2xl group-hover:scale-105 transition-transform duration-500 ease-in-out' width={500} height={500} alt='Boné Vai Viajar Outra Vez' />
+            <a
+              href="https://pay.hub.la/vJ5Nu2mcYOnm6A5a3OrL"
+              className='w-fit text-center border-2 border-white text-white text-sm lg:text-2xl rounded-[20px] uppercase px-8 py-2 group-hover:rotate-2 group-hover:-translate-y-2 transition-transform duration-500'
+              target='_blank'
+            >
+              Comprar Agora
+            </a>
+          </div>
           <div className='flex flex-col items-center gap-2 lg:gap-8 group'>
             <Image src={'/webp/produto-bone.webp'} className='w-full rounded-2xl group-hover:scale-105 transition-transform duration-500 ease-in-out' width={500} height={500} alt='Boné Vai Viajar Outra Vez' />
             <a
@@ -33,7 +53,7 @@ export default function Products() {
               Comprar Agora
             </a>
           </div>
-          <div className='flex flex-col items-center gap-2 lg:gap-8 group'>
+          {/* <div className='flex flex-col items-center gap-2 lg:gap-8 group'>
             <Image src={'/webp/produto-copo.webp'} className='w-full rounded-2xl group-hover:scale-105 transition-transform duration-500 ease-in-out' width={500} height={500} alt='Copo Vai Viajar Outra Vez' />
             <a
               href="#"
@@ -63,7 +83,7 @@ export default function Products() {
             >
               Comprar Agora
             </a>
-          </div>
+          </div> */}
         </div>
 
 

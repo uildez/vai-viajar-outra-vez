@@ -100,10 +100,10 @@ export default function Navbar() {
               ))}
             </motion.div>
           </div>
-          <button className="flex items-center justify-center gap-4 px-6 py-2 bg-yellow-600 text-black rounded-[10px] uppercase font-bold hover:rotate-2 hover:-translate-y-2 transition-transform duration-500">
+          <a href='https://pay.hub.la/xTBEymQhnuKQaRH8INZe' target='_blank' className="flex items-center justify-center gap-4 px-6 py-2 bg-yellow-600 text-black rounded-[10px] uppercase font-bold hover:rotate-2 hover:-translate-y-2 transition-transform duration-500">
             <IoLockClosedOutline />
             Área de Membros
-          </button>
+          </a>
         </div>
         <button className="block lg:hidden" onClick={() => setOpenMenu((prev) => !prev)}>
           {openMenu ? <CgClose className="text-4xl text-white" /> : <HiBars2 className="text-4xl text-white" />}

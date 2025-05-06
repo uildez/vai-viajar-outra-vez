@@ -1,4 +1,6 @@
 import About from "./containers/about";
+import { Ebook } from "./containers/ebook";
+import { Grupovip } from "./containers/grupovip";
 import Footer from "./containers/footer";
 import Guides from "./containers/guides";
 import Header from "./containers/header";
@@ -16,6 +18,8 @@ export default function Home() {
       <About />
       <Guides />
       <SocialMedia />
+      <Ebook />
+      <Grupovip />
       <Products />
       <Youtube />
       <Member />
