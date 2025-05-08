@@ -26,7 +26,7 @@ export default function Products() {
           <div className='flex flex-col items-center gap-2 lg:gap-8 group'>
             <Image src={'/webp/grupo-vip.webp'} className='w-full rounded-2xl group-hover:scale-105 transition-transform duration-500 ease-in-out' width={500} height={500} alt='Boné Vai Viajar Outra Vez' />
             <a
-              href="#"
+              href="https://pay.hub.la/xTBEymQhnuKQaRH8INZe"
               className='w-fit text-center border-2 border-white text-white text-sm lg:text-2xl rounded-[20px] uppercase px-8 py-2 group-hover:rotate-2 group-hover:-translate-y-2 transition-transform duration-500'
               target='_blank'
             >
