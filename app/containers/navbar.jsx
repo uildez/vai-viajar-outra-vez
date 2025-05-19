@@ -102,7 +102,7 @@ export default function Navbar() {
           </div>
           <a href='https://pay.hub.la/xTBEymQhnuKQaRH8INZe' target='_blank' className="flex items-center justify-center gap-4 px-6 py-2 bg-yellow-600 text-black rounded-[10px] uppercase font-bold hover:rotate-2 hover:-translate-y-2 transition-transform duration-500">
             <IoLockClosedOutline />
-            Área de Membros
+            Acesso ao Grupo VIP
           </a>
         </div>
         <button className="block lg:hidden" onClick={() => setOpenMenu((prev) => !prev)}>
@@ -140,13 +140,13 @@ export default function Navbar() {
                 </motion.a>
               ))}
               <motion.div variants={itemVariants} className='flex items-center mx-auto gap-4'>
-                <a href='' className='flex items-center justify-center rounded-full bg-yellow-600 hover:bg-blue-600 hover:-translate-y-2 hover:scale-105 w-[50px] h-[50px] transition-all duration-500 ease-in-out'>
+                <a href='https://www.instagram.com/vaiviajaroutravez/' className='flex items-center justify-center rounded-full bg-yellow-600 hover:bg-blue-600 hover:-translate-y-2 hover:scale-105 w-[50px] h-[50px] transition-all duration-500 ease-in-out'>
                   <FaInstagram className="text-2xl text-black" />
                 </a>
-                <a href='' className='flex items-center justify-center rounded-full bg-yellow-600 hover:bg-blue-600 hover:-translate-y-2 hover:scale-105 w-[50px] h-[50px] transition-all duration-500 ease-in-out'>
+                <a href='https://www.youtube.com/@vaiviajaroutravez' className='flex items-center justify-center rounded-full bg-yellow-600 hover:bg-blue-600 hover:-translate-y-2 hover:scale-105 w-[50px] h-[50px] transition-all duration-500 ease-in-out'>
                   <FaYoutube className="text-2xl text-black" />
                 </a>
-                <a href='' className='flex items-center justify-center rounded-full bg-yellow-600 hover:bg-blue-600 hover:-translate-y-2 hover:scale-105 w-[50px] h-[50px] transition-all duration-500 ease-in-out'>
+                <a href='https://www.tiktok.com/@vaiviajaroutravez' className='flex items-center justify-center rounded-full bg-yellow-600 hover:bg-blue-600 hover:-translate-y-2 hover:scale-105 w-[50px] h-[50px] transition-all duration-500 ease-in-out'>
                   <FaTiktok className="text-2xl text-black" />
                 </a>
               </motion.div>

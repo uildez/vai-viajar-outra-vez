@@ -30,7 +30,7 @@ export default function Products() {
               className='w-fit text-center border-2 border-white text-white text-sm lg:text-2xl rounded-[20px] uppercase px-8 py-2 group-hover:rotate-2 group-hover:-translate-y-2 transition-transform duration-500'
               target='_blank'
             >
-              Comprar Agora
+              Entrar no Grupo VIP
             </a>
           </div>
           <div className='flex flex-col items-center gap-2 lg:gap-8 group'>
@@ -40,7 +40,7 @@ export default function Products() {
               className='w-fit text-center border-2 border-white text-white text-sm lg:text-2xl rounded-[20px] uppercase px-8 py-2 group-hover:rotate-2 group-hover:-translate-y-2 transition-transform duration-500'
               target='_blank'
             >
-              Comprar Agora
+              Adquirir Ebook
             </a>
           </div>
           <div className='flex flex-col items-center gap-2 lg:gap-8 group'>

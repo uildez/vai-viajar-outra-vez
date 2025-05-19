@@ -41,7 +41,7 @@ export default function Footer() {
           setMessage('Erro ao enviar mensagem.');
         }
       );
-    e.currentTarget.reset();
+    // e.currentTarget.reset();
   };
 
   return (
@@ -66,6 +66,7 @@ export default function Footer() {
               <input
                 className='rounded-2xl px-10 py-2 border border-gray-300 focus:ring-2 text-black placeholder:text-black focus:ring-yellow-600 focus:outline-none'
                 type='email'
+                name="email"
                 placeholder='Seu email'
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
