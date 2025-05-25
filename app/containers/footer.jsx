@@ -23,7 +23,7 @@ export default function Footer() {
 
     emailjs
       .sendForm(
-        'service_3y6maqf',
+        'service_2q5phgc',
         'template_5f8alcq',
         e.currentTarget,
         '8kavuSOIAVRwe-zob'
