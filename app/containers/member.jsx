@@ -15,7 +15,7 @@ export default function Member() {
         <div className="lg:max-w-[50%]">
           <AccordionFAQ />
         </div>
-        <img className='lg:absolute lg:mb-0 mb-8 lg:h-[50vh] 2xl:h-[70vh] right-8 lg:-left-[35rem] -bottom-20' src={"/webp/notebook.webp"} alt='Notebook com sistema de acessos dos nossos parceiros' />
+        <img className='lg:absolute lg:mb-0 mb-8 lg:h-[80vh] 2xl:h-[70vh] right-8 lg:-left-[40rem] 2xl:-left-[35rem] lg:bottom-0 2xl:-bottom-20' src={"/webp/notebook.webp"} alt='Notebook com sistema de acessos dos nossos parceiros' />
       </div>
     </div>
   )
