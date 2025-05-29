@@ -27,7 +27,7 @@ export default function AccordionFAQ() {
           Qual é o valor do investimento para participar da comunidade?
         </AccordionHeader>
         <AccordionBody className="bg-white py-4 px-4 lg:px-8 text-blue-600 text-base font-normal">
-          Apenas R$ 179,40 por 6 meses de acesso total à comunidade, aos grupos e ao nosso suporte.
+          Apenas R$239 por 6 meses de acesso total à comunidade, aos grupos e ao nosso suporte.
         </AccordionBody>
       </Accordion>
       <Accordion open={open === 3}>
