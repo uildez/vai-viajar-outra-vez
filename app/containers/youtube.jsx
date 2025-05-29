@@ -11,12 +11,10 @@ import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/autoplay';
 
-
-
 export default function Youtube() {
   return (
     <div className='flex flex-col gap-12 bg-blue-600 py-12'>
-      <div className='flex flex-col lg:flex-row items-center lg:items-start justify-center w-full mx-auto gap-8 bg-blue-600'>
+      <div className='flex flex-col lg:flex-row items-center lg:items-start justify-center w-full mx-auto gap-8 bg-blue-600 pt-12 lg:pt-20'>
         <h2 className='relative text-9xl lg:text-[12rem] text-white font-bold font-akina uppercase -mt-[.5rem]'>
           3,31
           <YoutubeTitle />

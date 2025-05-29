@@ -6,7 +6,7 @@ import Guides from "./containers/guides";
 import Header from "./containers/header";
 import Member from "./containers/member";
 import Navbar from "./containers/navbar";
-import Products from "./containers/products";
+// import Products from "./containers/products";
 import SocialMedia from "./containers/socialMedia";
 import Youtube from "./containers/youtube";
 
@@ -20,7 +20,7 @@ export default function Home() {
       <SocialMedia />
       <Ebook />
       <Grupovip />
-      <Products />
+      {/* <Products /> */}
       <Youtube />
       <Member />
       <Footer />

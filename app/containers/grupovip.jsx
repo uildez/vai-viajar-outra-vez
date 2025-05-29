@@ -6,12 +6,20 @@ export const Grupovip = () => {
             <div className='flex flex-col gap-4 w-full lg:w-3/5 pl-0 lg:pl-28 2xl::pl-40 lg:gap-8 order-2 lg:order-1'>
                 <div className='flex lg:gap-4 justify-center lg:justify-start relative'>
                     <h2 className='text-4xl lg:text-6xl text-yellow-600 font-bold font-akina uppercase'>
-                        O que você encontra no nosso Grupo Exclusivo
+                        PARTICIPE TAMBÉM DA NOSSA COMUNIDADE
                     </h2>
                 </div>
                 <p className='lg:text-base 2xl:text-lg text-blue-600'>
-                    Você vai receber alertas diários de passagens baratas, tanto pelo Brasil quanto para destinos internacionais – inclusive voos entre países fora do Brasil.
-                    Além disso, terá acesso a outro grupo com as melhores promoções para acumular milhas e bônus de transferência, e o mais importante: meu suporte pessoal sempre que precisar.
+                    Ao entrar para a nossa comunidade, você recebe acesso ao nosso ebook e participa de dois grupos VIP:
+                </p>
+                <ol className='list-disc ml-4 lg:ml-8 lg:text-base 2xl:text-lg text-blue-600'>
+                    <li>Um com alertas diários de passagens baratas, nacionais e internacionais</li>
+                    <li>Outro com promoções, transferências bonificadas e oportunidades reais para acumular milhas</li>
+                </ol>
+
+                <p className='lg:text-base 2xl:text-lg text-blue-600'>
+                    Além disso, você conta com nosso suporte pessoal sempre que precisar.
+
                     Viajar barato não é sorte. É estratégia. E ela começa aqui.
                 </p>
                 <a href="#produtos" className='w-full lg:w-fit text-center items-center justify-center px-6 py-2 text-xl bg-blue-600 text-white rounded-[10px] uppercase font-bold hover:rotate-2 hover:-translate-y-2 transition-transform duration-500'>

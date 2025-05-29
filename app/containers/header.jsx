@@ -21,9 +21,9 @@ const letterVariant = {
   hidden: { opacity: 0, y: 50 },
   visible: {
     opacity: 1,
-    y: 0, 
+    y: 0,
     transition: {
-      duration: 0.4, 
+      duration: 0.4,
       ease: "easeOut",
     },
   },
@@ -54,7 +54,7 @@ export default function Header() {
   }, [xTranslation, width])
 
   return (
-    <div className={`flex flex-col relative bg-blue-600 justify-center h-screen max-w-[100vw] overflow-hidden `}>
+    <div className={`flex flex-col relative bg-blue-600 justify-center h-screen wa-w-[80vw] lg:max-w-[100vw] overflow-hidden `}>
       <div className={`flex flex-col justify-end lg:justify-center h-[80vh] w-full px-8 py-12 lg:py-0 lg:px-40 bg-[url('/webp/header-bg-mobile.webp')] lg:bg-[url('/webp/header-bg.webp')] bg-cover bg-no-repeat bg-bottom lg:bg-right`}>
         <div className='flex flex-col relative gap-8 w-full lg:w-3/4'>
           <AnimatedSVG />
@@ -67,7 +67,7 @@ export default function Header() {
             {textLines.map((line, lineIndex) => (
               <motion.div
                 key={lineIndex}
-                className="overflow-hidden" 
+                className="overflow-hidden"
                 variants={letterContainer}
               >
                 <motion.h1
@@ -86,7 +86,12 @@ export default function Header() {
               </motion.div>
             ))}
           </motion.div>
-          <p className='text-lg 2xl:text-2xl w-full lg:w-3/4 text-center lg:text-left'>Está buscando o guia completo para conhecer o Brasil e as melhores cidades internacionais pelo melhor preço? <strong>Aqui é o seu lugar!</strong></p>
+          <p className='text-lg 2xl:text-2xl w-full lg:w-3/4 text-center lg:text-left'>
+            Se você quer aprender a viajar mais, gastando menos, esse é o seu lugar.
+            Aqui você recebe alertas, dicas e caminhos práticos pra transformar seus planos em embarques reais.<br/><br/>
+            Enquanto muitos ainda estão procurando, quem está aqui já está planejando.
+            Não fique de fora — entre agora e viaje com estratégia.
+          </p>
         </div>
       </div>
 

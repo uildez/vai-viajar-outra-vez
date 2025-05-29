@@ -132,16 +132,15 @@ export default function About() {
             <AboutTitle />
           </div>
           <p className='lg:text-base 2xl:text-lg'>
-            Oi, somos a <strong>Elizabete</strong> e <strong>Rodrigo</strong>, um casal apaixonado por viagens, e através da <strong>“Vai Viajar Outra Vez?”</strong> buscamos mostrar experiências autênticas, compartilhando dicas práticas, acessíveis e experiências reais para nossa audiência.
-            <br />
-            <br />
-            Nosso conteúdo visa principalmente sair do comum, e mostrar algo além de resorts e hotéis luxuosos, que estão distante da realidade muitas pessoas.
-            <br />
-            <br />
-            Com a chegada dos nossos filhos, expandimos nosso conteúdo com dicas que também envolvam crianças, inspirando novas família a explorarem o mundo em família.
-            <br />
-            <br />
-            Nosso conteúdo é pensado para envolver e engajar nossa comunidade, entregando valor tanto para os seguidores quanto para as marcas que nos acompanham.
+            Oi, somos a Elizabete e o Rodrigo, um casal apaixonado por viagens — e hoje, mentores de quem quer conhecer o mundo de forma mais inteligente e acessível.
+            <br/><br/>
+            Através do “Vai Viajar Outra Vez?”, mostramos caminhos que talvez você ainda não tenha percebido. Nosso objetivo é ajudar você a economizar até 50% nas suas viagens, com estratégias práticas, guias testados por nós e muita experiência real na bagagem.
+            <br/><br/>
+            Já viajamos quase todo o Brasil — de Norte a Sul — e fomos até o Japão. Viajamos com nossos filhos, mas sem abrir mão do conforto, de trilhas, de cachoeiras, de aventuras e de experiências culturais autênticas. Nossas viagens vão muito além de resorts all inclusive. Fazemos expedições pelo Brasil e pelo mundo, e a cada 15 dias estamos em um novo destino.
+            <br/><br/>
+            Agora, esse é o nosso trabalho: te mostrar o mundo — e o caminho para chegar lá.
+            <br/><br/>
+            Nosso conteúdo é pensado para envolver, inspirar e entregar valor real para quem nos acompanha. Seja você uma família, um casal ou alguém que sonha em explorar mais, estamos aqui para caminhar com você.
           </p>
         </div>
       </div>
