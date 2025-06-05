@@ -14,7 +14,7 @@ export const Ebook = () => {
                     Depois de 8 anos voando com milhas, reuni tudo que aprendi num guia simples, direto e feito pra você que ainda está começando.
                     Sem enrolação, sem jargões: só o que funciona de verdade pra você começar a emitir passagens baratas pelo Brasil e até pro outro lado do mundo.
                 </p>
-                <a href="#produtos" className='w-full lg:w-fit text-center items-center justify-center px-6 py-2 text-xl bg-blue-600 text-white rounded-[10px] uppercase font-bold hover:rotate-2 hover:-translate-y-2 transition-transform duration-500'>
+                <a href="https://wa.me/message/DWSZY4XQB6CXH1" target='_blank' className='w-full lg:w-fit text-center items-center justify-center px-6 py-2 text-xl bg-blue-600 text-white rounded-[10px] uppercase font-bold hover:rotate-2 hover:-translate-y-2 transition-transform duration-500'>
                     Adquirir Ebook
                 </a>
             </div>
