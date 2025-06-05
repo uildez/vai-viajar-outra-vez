@@ -22,7 +22,7 @@ export const Grupovip = () => {
 
                     Viajar barato não é sorte. É estratégia. E ela começa aqui.
                 </p>
-                <a href="#produtos" className='w-full lg:w-fit text-center items-center justify-center px-6 py-2 text-xl bg-blue-600 text-white rounded-[10px] uppercase font-bold hover:rotate-2 hover:-translate-y-2 transition-transform duration-500'>
+                <a href="https://pay.hub.la/vJ5Nu2mcYOnm6A5a3OrL" target='_blank' className='w-full lg:w-fit text-center items-center justify-center px-6 py-2 text-xl bg-blue-600 text-white rounded-[10px] uppercase font-bold hover:rotate-2 hover:-translate-y-2 transition-transform duration-500'>
                     Quero participar da comunidade
                 </a>
             </div>
