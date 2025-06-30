@@ -54,8 +54,8 @@ export default function Header() {
   }, [xTranslation, width])
 
   return (
-    <div className={`flex flex-col relative bg-blue-600 justify-center h-screen wa-w-[80vw] lg:max-w-[100vw] overflow-hidden `}>
-      <div className={`flex flex-col justify-end lg:justify-center h-[80vh] w-full px-8 py-12 lg:py-0 lg:px-40 bg-[url('/webp/header-bg-mobile.webp')] lg:bg-[url('/webp/header-bg.webp')] bg-cover bg-no-repeat bg-bottom lg:bg-right`}>
+    <div className={`flex flex-col relative bg-blue-600 justify-center h-screen lg:max-w-[100vw] overflow-hidden`}>
+      <div className={`flex flex-col justify-end lg:justify-center h-[90vh] lg:h-[80vh] w-full px-8 py-12 lg:py-0 lg:px-40 pt-40 lg:pt-0 bg-[url('/webp/header-bg-mobile.webp')] lg:bg-[url('/webp/header-bg.webp')] bg-cover bg-no-repeat bg-bottom lg:bg-right`}>
         <div className='flex flex-col relative gap-8 w-full lg:w-3/4'>
           <AnimatedSVG />
           <motion.div
@@ -86,12 +86,15 @@ export default function Header() {
               </motion.div>
             ))}
           </motion.div>
-          <p className='text-lg 2xl:text-2xl w-full lg:w-3/4 text-center lg:text-left'>
+          <p className='text-base 2xl:text-2xl w-full lg:w-3/4 text-center lg:text-left'>
             Se você quer aprender a viajar mais, gastando menos, esse é o seu lugar.
-            Aqui você recebe alertas, dicas e caminhos práticos pra transformar seus planos em embarques reais.<br/><br/>
+            Aqui você recebe alertas, dicas e caminhos práticos pra transformar seus planos em embarques reais.<br /><br />
             Enquanto muitos ainda estão procurando, quem está aqui já está planejando.
             Não fique de fora — entre agora e viaje com estratégia.
           </p>
+          <a href='https://pay.hub.la/xTBEymQhnuKQaRH8INZe' target='_blank' className="flex w-full lg:w-2/4 lg:text-2xl items-center justify-center gap-4 px-6 py-2 bg-yellow-600 text-blue-600 rounded-[10px] uppercase font-bold hover:rotate-2 hover:-translate-y-2 transition-transform duration-500">
+            Quero aprender
+          </a>
         </div>
       </div>
 
