@@ -92,7 +92,7 @@ export default function Header() {
             Enquanto muitos ainda estão procurando, quem está aqui já está planejando.
             Não fique de fora — entre agora e viaje com estratégia.
           </p>
-          <a href='https://pay.hub.la/xTBEymQhnuKQaRH8INZe' target='_blank' className="flex w-full lg:w-2/4 lg:text-2xl items-center justify-center gap-4 px-6 py-2 bg-yellow-600 text-blue-600 rounded-[10px] uppercase font-bold hover:rotate-2 hover:-translate-y-2 transition-transform duration-500">
+          <a href='https://pay.hub.la/vJ5Nu2mcYOnm6A5a3OrL' target='_blank' className="flex w-full lg:w-2/4 lg:text-2xl items-center justify-center gap-4 px-6 py-2 bg-yellow-600 text-blue-600 rounded-[10px] uppercase font-bold hover:rotate-2 hover:-translate-y-2 transition-transform duration-500">
             Quero aprender
           </a>
         </div>
