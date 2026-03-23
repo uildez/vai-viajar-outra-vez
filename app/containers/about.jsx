@@ -131,17 +131,16 @@ export default function About() {
             </h2>
             <AboutTitle />
           </div>
-          <p className='lg:text-base 2xl:text-lg'>
-            Oi, somos a Elizabete e o Rodrigo, um casal apaixonado por viagens — e hoje, mentores de quem quer conhecer o mundo de forma mais inteligente e acessível.
-            <br/><br/>
-            Através do “Vai Viajar Outra Vez?”, mostramos caminhos que talvez você ainda não tenha percebido. Nosso objetivo é ajudar você a economizar até 50% nas suas viagens, com estratégias práticas, guias testados por nós e muita experiência real na bagagem.
-            <br/><br/>
-            Já viajamos quase todo o Brasil — de Norte a Sul — e fomos até o Japão. Viajamos com nossos filhos, mas sem abrir mão do conforto, de trilhas, de cachoeiras, de aventuras e de experiências culturais autênticas. Nossas viagens vão muito além de resorts all inclusive. Fazemos expedições pelo Brasil e pelo mundo, e a cada 15 dias estamos em um novo destino.
-            <br/><br/>
-            Agora, esse é o nosso trabalho: te mostrar o mundo — e o caminho para chegar lá.
-            <br/><br/>
-            Nosso conteúdo é pensado para envolver, inspirar e entregar valor real para quem nos acompanha. Seja você uma família, um casal ou alguém que sonha em explorar mais, estamos aqui para caminhar com você.
-          </p>
+          <p className='lg:text-[15px] 2xl:text-lg'>
+            Oi, somos a Elizabete e o Rodrigo. Mais do que um casal apaixonado por viagens, hoje somos os mentores de quem quer conhecer o mundo de forma inteligente, acessível e, acima de tudo, sem perder tempo e dinheiro.
+            <br /><br />
+            Através do “Vai Viajar Outra Vez?”, nós não apenas mostramos caminhos. Nós pegamos na sua mão. Nosso objetivo é fazer com que você economize muito nas suas próximas viagens usando as mesmas estratégias práticas e guias que já testamos em mais de 80 destinos pelo mundo. Já pisamos em quase todos os continentes, só falta a Oceania para a nossa conta, e toda essa bagagem está à sua disposição.
+            <br /><br />
+            Já viajamos quase todo o Brasil com nossos filhos e mostramos que é possível unir o conforto de uma viagem em família com a autenticidade de trilhas e cachoeiras. Nossa paixão é viver viagens reais e pé no chão, explorando novos lugares e lançando um guia de destino inédito a cada 15 dias para os nossos alunos.
+            <br /><br />
+            Agora, o nosso trabalho é te entregar esse mapa. E tem mais: nós damos o suporte direto no WhatsApp e uma call individual de 1h para desenhar o seu plano específico. Além disso, os membros ativos da comunidade garantem 40% de desconto na nossa hospedagem em Ilhabela, um benefício exclusivo que já paga o seu investimento na mentoria.
+            <br /><br />
+            Nosso conteúdo é pensado para inspirar e entregar valor real. Seja você uma família, um casal ou um viajante solo, estamos aqui para caminhar com você até o seu próximo embarque.          </p>
         </div>
       </div>
     </div>

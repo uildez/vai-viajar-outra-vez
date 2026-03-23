@@ -17,16 +17,16 @@ import 'swiper/css/autoplay';
 import { motion } from 'motion/react';
 
 const slides = [
-  { id: 1, title: 'Las Vegas', background: '/webp/lasvegas.webp' },
-  { id: 2, title: 'Orlando', background: '/webp/orlando.webp' },
-  { id: 3, title: 'California', background: '/webp/california.webp' },
-  { id: 4, title: 'Noronha', background: '/webp/noronha.webp' },
-  { id: 5, title: 'Maceió', background: '/webp/maceio.webp' },
-  { id: 6, title: 'Las Vegas', background: '/webp/lasvegas.webp' },
-  { id: 7, title: 'Orlando', background: '/webp/orlando.webp' },
+  { id: 1, title: 'Curaçao', link: "https://hub.la/r/KDToYpbJ7Yr4tLkOF2FB", background: '/webp/curacao.webp' },
+  { id: 2, title: 'Curaçao', link: "https://hub.la/r/Rws1b8z6wT9hBsgd4Wrf", background: '/webp/planilha-de-gastos.webp' },
+  { id: 3, title: 'Las Vegas', link: "", background: '/webp/lasvegas.webp' },
+  { id: 4, title: 'Orlando', link: "", background: '/webp/orlando.webp' },
+  { id: 5, title: 'California', link: "", background: '/webp/california.webp' },
+  { id: 6, title: 'Noronha', link: "", background: '/webp/noronha.webp' },
+  { id: 7, title: 'Maceió', link: "", background: '/webp/maceio.webp' },
+  { id: 8, title: 'Las Vegas', link: "", background: '/webp/lasvegas.webp' },
+  { id: 9, title: 'Orlando', link: "", background: '/webp/orlando.webp' },
 ];
-
-
 
 export default function Guides() {
   return (
@@ -53,14 +53,14 @@ export default function Guides() {
             slidesPerView: 3,
             spaceBetween: 50,
           },
-          900:  {
+          900: {
             slidesPerView: 5,
             spaceBetween: 50,
           },
         }}
       >
-        {slides.map((slide, index) => (
-          <SwiperSlide key={slide.id} className='hover:-translate-y-4 transition-transform duration-500 ease-in-out'>
+        {slides.map((slide, index) => {
+          const cardContent = (
             <motion.div
               style={{
                 backgroundImage: `url(${slide.background})`,
@@ -71,25 +71,42 @@ export default function Guides() {
                 borderRadius: '3rem',
                 overflow: 'hidden'
               }}
-              className="flex flex-col relative items-center justify-between h-[400px] 2xl:h-[500px] w-full group pt-8 pb-12 overflow-hidden cursor-pointer shadow-2xl rounded-[50px] transition-transform duration-500 ease-in-out"
+              className="flex flex-col relative items-center justify-between h-[400px] 2xl:h-[500px] w-full group pt-8 pb-12 overflow-hidden shadow-2xl rounded-[50px] transition-transform duration-500 ease-in-out"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{
                 duration: 0.5,
-                delay: index * 0.2, 
+                delay: index * 0.2,
               }}
             >
               <div className="flex relative items-center justify-end px-8 w-full z-10">
-                <IoIosLock className="text-base right-0 w-[50px] h-[50px] p-4 rounded-xl bg-yellow-600 group-hover:scale-110 transition-transform duration-500 ease-in-out" />
+                {slide.link ? null : (
+                  <IoIosLock className="text-base right-0 w-[50px] h-[50px] p-4 rounded-xl bg-yellow-600 group-hover:scale-110 transition-transform duration-500 ease-in-out" />
+                )}
               </div>
               <h2 className="font-akina text-center text-xl lg:text-3xl uppercase font-bold mx-auto z-10 group-hover:rotate-2 transition-transform duration-500 ease-in-out">
                 {slide.title}
               </h2>
               <div className="absolute w-full h-2/4 bottom-0 z-0 bg-gradient-to-t rounded-[3rem] from-black/80 to-transparent" />
             </motion.div>
-          </SwiperSlide>
-        ))}
+          );
+
+          return (
+            <SwiperSlide
+              key={slide.id}
+              className={`hover:-translate-y-4 transition-transform duration-500 ease-in-out ${slide.link ? "cursor-none" : "cursor-pointer"}`}
+            >
+              {slide.link ? (
+                <a href={slide.link} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
+                  {cardContent}
+                </a>
+              ) : (
+                cardContent
+              )}
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
       <div className='absolute top-0 bg-blue-600 h-[60%] w-full -z-0' />
     </div>

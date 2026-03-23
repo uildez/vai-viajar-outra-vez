@@ -63,7 +63,7 @@ export default function Navbar() {
     { name: 'Início', to: '#inicio', id: 1 },
     { name: 'Sobre', to: '#sobre', id: 2 },
     { name: 'Guias', to: '#guias', id: 3 },
-    { name: 'Produtos', to: '#produtos', id: 4 },
+    // { name: 'Produtos', to: '#produtos', id: 4 },
     { name: 'Cupons', to: '/cupons', id: 5 },
     { name: 'Indicações', to: '/indicacoes', id: 6 },
     { name: 'Ingressos', to: 'https://vaiviajaroutravez.justtraveltour.com/ingressos/UNIVERSAL%20ORLANDO%20RESORT/7?destination=Orlando&destinationCode=2&destinationState=Florida&destinationStateCode=2&date=2025-03-21&utm_source=Slide&utm_medium=Ingressos+Universal+15-09-2022&utm_campaign=Ingressos+para+Univesal&utm_id=Universal+Orlando+Resort', id: 7 },

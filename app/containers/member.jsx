@@ -12,9 +12,13 @@ export default function Member() {
         Confira nosso perguntas e respostas
       </h2>
       <div className='flex flex-col-reverse lg:flex-row w-full h-full relative items-end justify-end min-h-[60vh]'>
-        <div className="lg:max-w-[50%]">
+        <div className='flex lg:max-w-[50%] flex-col gap-8'>
           <AccordionFAQ />
+          <a href="https://wa.link/z3re90" target='_blank' className='w-full lg:w-fit text-center items-center justify-center px-6 py-2 text-xl bg-blue-600 text-white rounded-[10px] uppercase font-bold hover:rotate-2 hover:-translate-y-2 transition-transform duration-500'>
+            QUERO MEU TESTE GRÁTIS DE 7 DIAS
+          </a>
         </div>
+        
         <img className='lg:absolute lg:mb-0 mb-8 lg:h-[80vh] 2xl:h-[70vh] right-8 lg:-left-[40rem] 2xl:-left-[35rem] lg:bottom-0 2xl:-bottom-20' src={"/webp/notebook.webp"} alt='Notebook com sistema de acessos dos nossos parceiros' />
       </div>
     </div>
