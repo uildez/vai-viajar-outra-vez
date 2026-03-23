@@ -80,8 +80,7 @@ body {
 }
 
 .swiper-pagination {
-  padding-top: 200px;
-  transform: scale(1.5)!important
+  transform: translateY(50px)!important
 }
 
 .swiper-button-next {
@@ -91,6 +90,7 @@ body {
   border-radius: 100%!important;
   color: #fff!important;
   display: flex!important;
+  padding: 30px;
   justify-content: center!important;
   align-items: center!important;
   transform: translateX(-10rem)!important;
@@ -101,6 +101,7 @@ body {
   background: rgb(0 85 207 / var(--tw-text-opacity, 0.8));
   width: 100px!important;
   height: 100px!important;
+  padding: 30px;
   border-radius: 100%!important;
   color: #fff!important;
   display: flex!important;
