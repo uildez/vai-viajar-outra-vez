@@ -11,7 +11,7 @@ export const Ebook = () => {
                     </h2>
                 </div>
                 <p className='lg:text-base 2xl:text-lg text-blue-600'>
-                    Depois de 8 anos voando com milhas e acumulando a experiência de mais de 80 destinos, reuni tudo o que aprendi num guia simples, direto e feito para você que ainda está começando. Sem enrolação e sem jargões: apenas o que funciona de verdade para você começar a emitir passagens baratas pelo Brasil e até para o outro lado do mundo.
+                    Depois de 13 anos voando com milhas e acumulando a experiência de mais de 80 destinos, reuni tudo o que aprendi num guia simples, direto e feito para você que ainda está começando. Sem enrolação e sem jargões: apenas o que funciona de verdade para você começar a emitir passagens baratas pelo Brasil e até para o outro lado do mundo.
                 </p>
 
                 <span className='text-blue-600 -mb-4'>Apenas R$ 57,00 (ou em até 6x).</span>
