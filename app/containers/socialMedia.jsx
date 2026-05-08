@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react'
+import React, { useState } from 'react'
 import { useEffect, useRef } from 'react';
 import useMeasure from 'react-use-measure';
 import { animate, motion, useMotionValue } from "motion/react"
@@ -16,10 +16,18 @@ import 'swiper/css/autoplay';
 
 export default function SocialMedia() {
   const scrollRef = useRef(null);
+  const [followers, setFollowers] = useState('123k');
 
   let [ref, { width }] = useMeasure();
 
   const xTranslation = useMotionValue(0);
+
+  useEffect(() => {
+    fetch('/api/social')
+      .then(r => r.json())
+      .then(data => { if (data.instagram) setFollowers(data.instagram); })
+      .catch(() => {});
+  }, []);
 
   useEffect(() => {
     let controls;
@@ -45,7 +53,7 @@ export default function SocialMedia() {
           viewport={{ once: false, amount: 0.3, duration: 1 }}
           className='text-9xl lg:text-[12rem] leading-[0.9] -mt-24 text-blue-600 font-bold font-akina uppercase'
         >
-          123k
+          {followers}
         </motion.h2>
         <motion.div
           initial={{ x: -50, opacity: 0 }}
