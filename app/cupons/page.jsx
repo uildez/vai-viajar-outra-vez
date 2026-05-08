@@ -12,11 +12,11 @@ export default function Page() {
     const [alert, setAlert] = useState(false);
 
     useEffect(() => {
-        fetch("https://script.google.com/macros/s/AKfycbzt9T8UKY3BVxdSV_Lq37BQgp4fDY92fLpNFTMT9eBDJ8T0FbfH17N-kG_D3nTZzZjj1Q/exec")
+        fetch("https://script.google.com/macros/s/AKfycbxIk_5nujbN7mOsW0xeQcS0cCR9Bz8fdyJiIljsujGyJq_0lNqozGD5Sx0gFtH5hXKnwA/exec")
             .then(response => response.json())
             .then(data => setCupons(data))
-            .catch(error => console.error("Erro ao buscar cupons:", error));
-        setLoading(false)
+            .catch(error => console.error("Erro ao buscar cupons:", error))
+            .finally(() => setLoading(false));
     }, []);
 
     const handleCopyAndRedirect = (codigo, link) => {
