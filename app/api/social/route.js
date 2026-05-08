@@ -1,16 +1,52 @@
 import path from 'path'
 import fs from 'fs'
 
-const dataPath = path.join(process.cwd(), 'data', 'social.json')
-
 const ALLOWED_KEYS = ['instagram', 'youtube', 'facebook', 'tiktok']
+const DEFAULTS = { instagram: '123k', youtube: '+4', facebook: '0', tiktok: '0' }
+
+async function getRedis() {
+  if (!process.env.UPSTASH_REDIS_REST_URL) return null
+  const { Redis } = await import('@upstash/redis')
+  return Redis.fromEnv()
+}
+
+async function readData() {
+  const redis = await getRedis()
+  if (redis) {
+    const data = await redis.hgetall('social')
+    return data && Object.keys(data).length > 0 ? data : DEFAULTS
+  }
+  try {
+    return JSON.parse(fs.readFileSync(path.join(process.cwd(), 'data', 'social.json'), 'utf-8'))
+  } catch {
+    return DEFAULTS
+  }
+}
+
+async function writeData(fields) {
+  const redis = await getRedis()
+  if (redis) {
+    const updates = {}
+    for (const key of ALLOWED_KEYS) {
+      if (fields[key] !== undefined && fields[key] !== '') updates[key] = fields[key]
+    }
+    if (Object.keys(updates).length > 0) await redis.hset('social', updates)
+    return
+  }
+  const dataPath = path.join(process.cwd(), 'data', 'social.json')
+  const current = JSON.parse(fs.readFileSync(dataPath, 'utf-8'))
+  const updated = { ...current }
+  for (const key of ALLOWED_KEYS) {
+    if (fields[key] !== undefined && fields[key] !== '') updated[key] = fields[key]
+  }
+  fs.writeFileSync(dataPath, JSON.stringify(updated, null, 2))
+}
 
 export async function GET() {
   try {
-    const data = JSON.parse(fs.readFileSync(dataPath, 'utf-8'))
-    return Response.json(data)
+    return Response.json(await readData())
   } catch {
-    return Response.json({ instagram: '123k', youtube: '+4', facebook: '0', tiktok: '0' })
+    return Response.json(DEFAULTS)
   }
 }
 
@@ -24,15 +60,7 @@ export async function POST(request) {
       return Response.json({ error: 'Senha incorreta' }, { status: 401 })
     }
 
-    const current = JSON.parse(fs.readFileSync(dataPath, 'utf-8'))
-    const updated = { ...current }
-    for (const key of ALLOWED_KEYS) {
-      if (fields[key] !== undefined && fields[key] !== '') {
-        updated[key] = fields[key]
-      }
-    }
-    fs.writeFileSync(dataPath, JSON.stringify(updated, null, 2))
-
+    await writeData(fields)
     return Response.json({ success: true })
   } catch {
     return Response.json({ error: 'Erro interno' }, { status: 500 })

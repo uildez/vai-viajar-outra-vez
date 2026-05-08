@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(Get-ChildItem -Force -Recurse -Depth 3)",
-      "Bash(Select-Object FullName)"
+      "Bash(Select-Object FullName)",
+      "Bash(npm install *)",
+      "Bash(npm uninstall *)"
     ]
   }
 }
