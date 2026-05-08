@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import YoutubeTitle from '../components/youtubeTitle';
 
 import { GoArrowUpRight } from "react-icons/go";
@@ -12,11 +12,20 @@ import 'swiper/css';
 import 'swiper/css/autoplay';
 
 export default function Youtube() {
+  const [subscribers, setSubscribers] = useState('+4');
+
+  useEffect(() => {
+    fetch('/api/social')
+      .then(r => r.json())
+      .then(data => { if (data.youtube) setSubscribers(data.youtube); })
+      .catch(() => {});
+  }, []);
+
   return (
     <div className='flex flex-col gap-12 bg-blue-600 py-12'>
       <div className='flex flex-col lg:flex-row items-center lg:items-start justify-center w-full mx-auto gap-8 bg-blue-600 pt-12 lg:pt-20'>
         <h2 className='relative text-9xl lg:text-[12rem] text-white font-bold font-akina uppercase -mt-[.5rem]'>
-          +4
+          {subscribers}
           <YoutubeTitle />
         </h2>
         <div className='relative px-8 lg:px-0'>
