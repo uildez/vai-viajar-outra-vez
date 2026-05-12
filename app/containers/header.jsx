@@ -90,8 +90,8 @@ export default function Header() {
             Chegou a hora de parar de apenas salvar posts e começar a fazer as malas. Com o nosso acompanhamento pessoal, você tira suas viagens do papel, para de só sonhar com o próximo destino e aprende o caminho real para viajar com estratégia, conforto e economia.
           </p>
           {/* <a href='https://pay.hub.la/vJ5Nu2mcYOnm6A5a3OrL' target='_blank' className="flex w-full lg:w-2/4 lg:text-2xl items-center justify-center gap-4 px-6 py-2 bg-yellow-600 text-blue-600 rounded-[10px] uppercase font-bold hover:rotate-2 hover:-translate-y-2 transition-transform duration-500"> */}
-          <a href='https://wa.link/z3re90' target='_blank' className="flex w-full lg:w-2/4 lg:text-2xl items-center justify-center gap-4 px-6 py-2 bg-yellow-600 text-blue-600 rounded-[10px] uppercase font-bold hover:rotate-2 hover:-translate-y-2 transition-transform duration-500">
-            TESTAR 7 DIAS GRÁTIS
+          <a href='https://chat.whatsapp.com/KKARcula2291nDQ7vb5KbM?mode=gi_t' title='Entre no nosso grupo gratuito' target='_blank' className="flex w-full lg:w-2/4 lg:text-2xl items-center justify-center gap-4 px-6 py-2 bg-yellow-600 text-blue-600 rounded-[10px] uppercase font-bold hover:rotate-2 hover:-translate-y-2 transition-transform duration-500">
+            GRUPO GRATUITO
           </a>
         </div>
       </div>

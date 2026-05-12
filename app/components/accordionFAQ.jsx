@@ -28,7 +28,7 @@ export default function AccordionFAQ() {
           Qual é o valor do investimento após o teste?
         </AccordionHeader>
         <AccordionBody className="bg-white py-4 px-4 lg:px-8 text-blue-600 text-base font-normal">
-          Se você amar a experiência e decidir seguir com a gente, o investimento é de apenas R$ 247 por 6 meses de acesso total. Você pode parcelar em até 6x de R$ 41,16, o que dá menos de R$ 1,40 por dia.
+          Se você amar a experiência e decidir seguir com a gente, o investimento é de apenas 12x de R$ 60,66 ou R$ 547 em 1x no cartão.
         </AccordionBody>
       </Accordion>
 

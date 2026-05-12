@@ -24,8 +24,8 @@ export const Grupovip = () => {
 
                 <div className='flex flex-col gap-2 items-center mx-auto text-center text-white bg-blue-600 rounded-xl p-8'>
                     <p>Por apenas</p>
-                    <p className='flex items-end gap-2'> <span>6x de </span><span className='text-7xl font-bold'>R$ 41,16</span></p>
-                    <p>(ou R$ 247 à vista)</p>
+                    <p className='flex items-end gap-2'> <span>12x de </span><span className='text-7xl font-bold'>R$ 60,66</span></p>
+                    <p>(ou R$ 547 em 1x no cartão)</p>
                 </div>
 
                 <p className='lg:text-base 2xl:text-lg text-blue-600 text-center'>
@@ -36,7 +36,7 @@ export const Grupovip = () => {
                     Viajar barato não é sorte. É estratégia. E ela começa aqui. */}
                     <br/>
                     <br/>
-                    <strong>Investimento após o teste:</strong> Apenas R$ 247 (em até 6x de R$ 41,16).
+                    <strong>Investimento após o teste:</strong> Apenas R$ 547 (em até 12x de R$ 60,66).
                 </p>
                 <a href="https://wa.link/z3re90" target='_blank' className='w-full lg:w-fit text-center items-center justify-center px-6 py-2 text-xl bg-blue-600 text-white rounded-[10px] uppercase font-bold hover:rotate-2 hover:-translate-y-2 transition-transform duration-500'>
                     QUERO MEU TESTE GRÁTIS DE 7 DIAS
